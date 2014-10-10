@@ -25,8 +25,8 @@ def exitEmulator(channel):
         try:
             commandpath = open(os.path.join('/proc', pid, 'cmdline'), 'rb').read()
             if commandpath[0:24] == '/opt/retropie/emulators/':
-                os.system('kill -INT %s' % pid)
-                print('kill -INT %s' % pid)
+                os.system('kill -QUIT %s' % pid)
+                print('kill -QUIT %s' % pid)
         except IOError:
             continue
 
