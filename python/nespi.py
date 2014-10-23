@@ -39,6 +39,6 @@ def powerOff(channel):
 GPIO.add_event_detect(23, GPIO.RISING, callback=powerOff, bouncetime=500)
 GPIO.add_event_detect(25, GPIO.RISING, callback=exitEmulator, bouncetime=500)
 
-# And... nothing more to do. let’s wait.
+# And... nothing more to do. let's wait.
 while True:
     time.sleep(10)
